@@ -1,0 +1,42 @@
+name: kakuoku
+services:
+  app:
+    image: kakuoku:local
+    build:
+      context: .
+      dockerfile: Containerfile
+    init: true
+    user: "1000:1000"
+    restart: unless-stopped
+    stop_grace_period: 35s
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    pids_limit: 64
+    mem_limit: 768m
+    memswap_limit: 768m
+    cpus: 2.0
+    shm_size: 16m
+    ulimits:
+      nofile:
+        soft: 1024
+        hard: 1024
+      core: 0
+    ports:
+      - "127.0.0.1:3101:3100"
+    environment:
+      KAKUOKU_PUBLIC_PORT: "3101"
+      GHOSTMETAL_MODEL: "${GHOSTMETAL_MODEL:-glm-5.3-long}"
+    volumes:
+      - app-data:/app/data
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,nodev,size=64m,mode=1777
+    logging:
+      driver: json-file
+      options:
+        max-size: "5m"
+        max-file: "2"
+volumes:
+  app-data:
+    name: "${KAKUOKU_DATA_VOLUME:-kakuoku-production-data}"
+    external: true

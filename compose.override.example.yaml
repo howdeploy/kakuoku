@@ -1,0 +1,11 @@
+# Optional host folder instead of the default Docker volume.
+# Copy to compose.override.yaml and set KAKUOKU_DATA_DIR in a local .env.
+# For an existing installation, migrate the complete storage before switching.
+services:
+  app:
+    volumes:
+      - type: bind
+        source: "${KAKUOKU_DATA_DIR:?Set KAKUOKU_DATA_DIR in your local .env}"
+        target: /app/data
+        bind:
+          create_host_path: false

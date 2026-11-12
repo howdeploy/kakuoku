@@ -1,0 +1,29 @@
+{
+  "name": "kakuoku",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "electron/main.cjs",
+  "engines": { "node": ">=24.0.0" },
+  "scripts": {
+    "dev": "node server/index.mjs --demo",
+    "build": "vite build",
+    "start": "node server/index.mjs",
+    "host": "node host/index.mjs",
+    "desktop": "electron ."
+  },
+  "dependencies": {
+    "file-type": "^21.1.1",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1",
+    "cheerio": "^1.1.2",
+    "ipaddr.js": "^2.2.0"
+  },
+  "devDependencies": {
+    "agentation": "latest",
+    "electron": "latest",
+    "vite": "latest"
+  }
+}

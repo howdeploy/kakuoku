@@ -1,0 +1,141 @@
+{
+  "generator": "Built-in imagegen; model identity not exposed. User approved this tool instead of requiring GPT Image 2.5.",
+  "reference": "public/avatars.png",
+  "commonPrompt": "Use case: stylized-concept. Asset: ONE new anime girl head avatar, square transparent PNG. The attached image is STYLE REFERENCE ONLY; do not reproduce its six-avatar layout. Match its minimal cute slightly silly anime faces, smooth dark outlines, large simple flat pastel hair shapes, warm ivory face, tiny black dot or short-dash eyes, tiny mouth, no nose, very little shading. WHOLE HEAD ONLY, with all hair and any accessory intact, no neck or body. Head should have a broad near-square silhouette with rounded lower face, filling about 86 percent of a square canvas, centered with a small safe margin. The hair should almost wrap the face as in the reference. Absolutely NO rounded-square border, NO frame, NO tile, NO white backdrop, NO dark background: genuine alpha transparency everywhere outside the head silhouette. Hair is an integral part of this single head image; do not separate facial layers. No text, no numbers, no watermark. Make accessories small and clear; keep the expression charmingly clueless, never realistic or detailed. Specific character: ",
+  "compositionRefresh": {
+    "date": "2026-11-12",
+    "generator": "Built-in imagegen edit; transparent_background=true; model identity not exposed",
+    "reference": "public/avatars.png",
+    "files": "public/avatars/heads/07.png through 26.png; existing head IDs and order preserved",
+    "commonEditPrompt": "Use case: identity-preserve. Input image 1 is the specific head to EDIT; input image 2 is the user's original six heads and is the authoritative STYLE AND COMPOSITION reference. Return ONE replacement head on a square genuinely transparent PNG, not a framed icon and not a contact sheet. Preserve the identity, hair color, hairstyle, accessory colors, tiny eye shapes and mouth from input 1, as described below. Correct composition to match input 2: a BROAD, almost rounded-SQUARE head, filling 96-98 percent of BOTH canvas width and height with 1-2 percent transparent safe margins. Flatten the crown into a gently curved wide top with steep near-vertical sides; use a broad softly flattened lower face. Enlarge the warm-ivory face to 72-78 percent of canvas width; space the tiny eyes widely. Hair must wrap closely around the large face as a few broad flat pastel shapes. Tuck all buns, braids, pigtails and tufts close into this nearly square silhouette, so accessories do not force the central face to shrink. Match reference 2's simple, bold, smooth dark outlines, dot or dash eyes, tiny mouth, no nose and minimal shading. This head is displayed in a separate square frame in code; it should almost fill that frame, with minimal white corners. Absolutely NO frame, rounded-square border, tile or backdrop in the PNG. Transparent outside only the actual head silhouette. No neck, no body, no text, no numbers, no extra objects. Do not retain input 1's excessive empty margins or small round central face. Character: ",
+    "suffixes": "Append the matching characters[].promptSuffix",
+    "overrides": {
+      "20": "Use case: identity-preserve. Edit target: input image 1, the single lilac-haired anime head with two pigtails and pale yellow clips. Style and COMPOSITION reference: input image 2, the six original framed faces. Create ONE replacement transparent PNG head, NOT a framed icon, NOT a sheet. Keep the lilac hair, two very short side pigtails, yellow clips, tiny black dot eyes and tiny straight mouth of input 1. The essential correction: match the broad nearly square heads in input 2, with a BIG wide warm-ivory lower face; the head must occupy 96-98% of both width AND height of a square canvas. Flatten the crown into a softly rounded-square silhouette with steep sides and a very broad chin; widen the face substantially. Short pigtails must lie close against the sides and within the head's nearly square silhouette; they must not force the central face smaller. Face should be around 72-78% of canvas width, with dot eyes spaced widely and tiny mouth. Hair wraps around the large face, with just a few broad flat pastel shapes. Smooth bold dark outline, very little shading, match the simplicity of reference 2. Tiny 1-2% safe transparent margin at each edge. Genuine alpha transparency only OUTSIDE head silhouette, no white surround or backing, no frame, no border, no tile, no neck, no body, no text, no numbers, no additional objects. The finished head will be placed under a separate programmatically drawn square frame, so fill its square almost edge to edge."
+    },
+    "cleanup": {
+      "19": "Use case: precise-object-edit. Edit this ONE existing transparent anime head PNG. Remove ONLY the accidental dirty dark grey/black smudge and its diffuse dark halo on the upper center of the green hair crown, near x=620 y=270. Fill that whole small region seamlessly with the surrounding clean muted moss-green hair color, with extremely subtle smooth shading matching the rest of the crown. There must be no dirty spot, hole, patch, mottling or blob anywhere on the hair. Preserve absolutely everything else: broad near-square head filling the canvas, large pale face, one dash eye and one dot eye, tiny w mouth, exact hair shape, cream flower clip at upper right, colors, all outlines and transparency outside the head. Keep the same framing and scale. No background, no frame, no text, no new objects. Return one genuinely transparent PNG."
+    }
+  },
+  "characters": [
+    {
+      "id": 6,
+      "file": "public/avatars/heads/07.png",
+      "name": "Персиковый боб",
+      "promptSuffix": "pastel apricot hair, fluffy short bob, rounded choppy fringe, tiny cream star hairclip, dot eyes and a tiny w-shaped mouth."
+    },
+    {
+      "id": 7,
+      "file": "public/avatars/heads/08.png",
+      "name": "Бирюзовая волна",
+      "promptSuffix": "dusty teal hair, smooth rounded bob with a single side wave in the bangs, small gold barrette, short dash eyes and a tiny flat mouth."
+    },
+    {
+      "id": 8,
+      "file": "public/avatars/heads/09.png",
+      "name": "Сиреневая чёлка",
+      "promptSuffix": "soft lavender hair, pageboy bob with scalloped blunt bangs, cream round hairpin, dot eyes and a tiny o-shaped mouth."
+    },
+    {
+      "id": 9,
+      "file": "public/avatars/heads/10.png",
+      "name": "Медовые хвостики",
+      "promptSuffix": "honey blonde hair, two very short low pigtails tucked close to the cheeks, middle-parted bangs, tiny black ribbon, vertical dash eyes and a tiny crooked smile."
+    },
+    {
+      "id": 10,
+      "file": "public/avatars/heads/11.png",
+      "name": "Розовые кудри",
+      "promptSuffix": "dusty rose hair, compact gently curly bob, asymmetrical fringe, mint triangular clip, one dash eye and one dot eye, tiny straight mouth."
+    },
+    {
+      "id": 11,
+      "file": "public/avatars/heads/12.png",
+      "name": "Мятные пучки",
+      "promptSuffix": "pale mint hair, two small rounded side buns hugging the head, simple straight bangs, pastel peach hairpin, dot eyes and a tiny w-shaped mouth."
+    },
+    {
+      "id": 12,
+      "file": "public/avatars/heads/13.png",
+      "name": "Тёмно-синяя прядь",
+      "promptSuffix": "muted navy blue hair, short tucked bob, a long side bang and one small upward cowlick, no accessories, sleepy dash eyes and a tiny o mouth."
+    },
+    {
+      "id": 13,
+      "file": "public/avatars/heads/14.png",
+      "name": "Карамельный ёжик",
+      "promptSuffix": "warm caramel hair, very short fluffy pixie bob with broad chunky tufts, small pale blue cross-shaped clip, dot eyes and a tiny happy mouth."
+    },
+    {
+      "id": 14,
+      "file": "public/avatars/heads/15.png",
+      "name": "Серебряный пробор",
+      "promptSuffix": "soft silver grey hair, rounded chin-length bob with a central part and two broad curved front locks, tiny pink bow on one side, vertical dash eyes and tiny flat mouth."
+    },
+    {
+      "id": 15,
+      "file": "public/avatars/heads/16.png",
+      "name": "Сливовая косичка",
+      "promptSuffix": "muted plum hair, short bob with one small side braid tucked close against the cheek, diagonal bangs, cream square clip, dot eyes and tiny w mouth."
+    },
+    {
+      "id": 16,
+      "file": "public/avatars/heads/17.png",
+      "name": "Лимонная чёлка",
+      "promptSuffix": "pale butter yellow hair, smooth mushroom-shaped bob with slightly uneven straight bangs, small lavender heart clip, sleepy dash eyes and tiny smile."
+    },
+    {
+      "id": 17,
+      "file": "public/avatars/heads/18.png",
+      "name": "Коралловое каре",
+      "promptSuffix": "muted coral orange hair, compact angular bob with two broad pointed cheek locks, side-swept fringe, light sage rectangular clip, dot eyes and tiny o mouth."
+    },
+    {
+      "id": 18,
+      "file": "public/avatars/heads/19.png",
+      "name": "Мшистый боб",
+      "promptSuffix": "soft moss green hair, a full rounded bob with sweeping crescent bangs, one cream flower clip, one dot eye and one dash eye, tiny w mouth."
+    },
+    {
+      "id": 19,
+      "file": "public/avatars/heads/20.png",
+      "name": "Лиловые хвостики",
+      "promptSuffix": "dusty lilac hair, two short outward-flipped side ponytails close to the face, split bangs, small soft yellow clips, dot eyes and tiny flat mouth."
+    },
+    {
+      "id": 20,
+      "file": "public/avatars/heads/21.png",
+      "name": "Кофейные пряди",
+      "promptSuffix": "milky coffee brown hair, short wavy bob with large soft waves and center part, tiny blue ribbon, vertical dash eyes and tiny contented smile."
+    },
+    {
+      "id": 21,
+      "file": "public/avatars/heads/22.png",
+      "name": "Пудровый чуб",
+      "promptSuffix": "pale powder pink hair, short pixie bob with one broad sweeping forelock and two small side tufts, small dark rose barrette, dot eyes and tiny crooked mouth."
+    },
+    {
+      "id": 22,
+      "file": "public/avatars/heads/23.png",
+      "name": "Стальной боб",
+      "promptSuffix": "muted steel blue hair, very rounded bob with a straight diagonal fringe, small cream diamond clip, sleepy dash eyes and tiny o mouth."
+    },
+    {
+      "id": 23,
+      "file": "public/avatars/heads/24.png",
+      "name": "Песочная коса",
+      "promptSuffix": "soft sandy blonde hair, simple chin-length bob with one thick short braid along the side of the head, parted bangs, mint bow, dot eyes and tiny w mouth."
+    },
+    {
+      "id": 24,
+      "file": "public/avatars/heads/25.png",
+      "name": "Малиновая волна",
+      "promptSuffix": "muted berry mauve hair, compact bob with broad outward curling ends and wavy bangs, a tiny peach circle hairpin, dot eyes and tiny flat mouth."
+    },
+    {
+      "id": 25,
+      "file": "public/avatars/heads/26.png",
+      "name": "Шалфейная прядь",
+      "promptSuffix": "pale grey sage hair, short asymmetrical bob with a long curved front lock and a small top cowlick, tiny lavender star clip, vertical dash eyes and tiny smile."
+    }
+  ]
+}
